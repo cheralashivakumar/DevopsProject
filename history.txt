@@ -1,0 +1,272 @@
+    1  sudo apt update && sudo apt upgrade -y
+    2  sudo apt install -y git docker.io kubectl ansible terraform
+    3 
+    6  sudo apt update && sudo apt install -y apt-transport-https curl
+    7  sudo apt install -y kubectl
+    8  apt-cache search kubectl
+    9  kubectl version --client
+   10  sudo apt install -y kubernetes-client
+   11  kubectl version --client
+   12  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   13  sudo apt update
+   14  sudo apt install -y wget gpg
+   15  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   16  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   17  sudo apt update
+   18  sudo nano /etc/apt/sources.list.d/hashicorp.list
+   19  sudo apt update
+   20  sudo nano /etc/apt/sources.list.d/hashicorp.list
+   21  deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com bookworm main
+   22  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com bookworm main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   23  sudo apt update
+   24  sudo apt install -y terraform
+   25  terraform -version
+   26  sudo apt update
+   27  sudo systemctl start apache2
+   28  dpkg -l | grep apache2
+   29  sudo apt install -y apache2
+   30  sudo systemctl start apache2
+   31  sudo systemctl status apache2
+   32  clear
+   33  /etc/apache2/apache2.conf
+   34  sudo nano /etc/apache2/apache2.conf
+   35  ps -p 1 -o comm=
+   36  sudo nano /var/www/html/index.html
+   37  service httpd status
+   38  cat/etc/redhat-release
+   39  cat /etc/os-release
+   40  sudo systemctl status httpd
+   41  sudo service httpd status
+   42  httpd -t
+   43  service httpd status
+   44  rpm -qa | grep httpd
+   45  sudo apt install apache2
+   46  sudo systemctl start httpd
+   47  sudo systemctl enable httpd
+   48  sudo yum -y install httpd
+   49  cat /etc/os-release
+   50  sudo systemctl status apache2
+   51  dpkg -1 | grep git
+   52  dpkg --help
+   53  apt list --installed
+   54  apt list --installed | grep terraform
+   55  apt list --installed | grep apache2
+   56  apt list --installed | grep nginx
+   57* apt-get 
+   58  apt list --installed | grep httpd
+   59  apt-cache
+   60  apt search
+   61  apt search nginx
+   62  apt search apache2
+   63  pwd
+   64  echo $? -eq 0
+   65  ls
+   66  cd Pictures/
+   67  ls
+   68  cd ..
+   69  sudo su
+   70  whoami
+   71  man sudo
+   72  man cp
+   73  man
+   74  w
+   75  git --version
+   76  docker --version
+   77  kuberctl --version
+   78  kuberctl version --version
+   79  kuberctl version --client
+   80  java -version
+   81  ansible --version
+   82  apt search kuberctl
+   83  apt list --installed | grep kuberctl
+   84  apt-get list --installed | grep kuberctl
+   85  sudo systemctl status kuberctl
+   86  apy list --install | grep kuberctl
+   87  apy list --install | grep kuber
+   88  apt list --installed | grep kuber
+   89  apt-cache search kube
+   90  apt list --installed | grep kubectl
+   91  sudo systemctl status kubernetes-client
+   92  ansible --version
+   93  apt-cache search ansible
+   94  git --version
+   95  docker --version
+   96  sudo apt list --installed | grep docker
+   97  sudo apt remove docker docker-engine docker.io containerd runc
+   98  sudo apt update
+   99  docker --version
+  100  sudo apt update
+  101  sudo apt install docker-ce docker-ce-cli containerd.io -y
+  102  sudo apt remove docker docker-engine docker.io containerd runc
+  103  sudo apt update
+  104  sudo apt install docker-ce docker-ce-cli containerd.io -y
+  105  curl -fsSL https://get.docker.com -o get-docker.sh
+  106  sudo sh get-docker.sh
+  107  docker --version
+  108  lsb_release -a
+  109  kubectl logs
+  110  kubectl logs -h
+  111  kubectl logs nginx
+  112  java -version
+  113  apt search openjdk
+  114  sudo apt install openjdk-17-jdk -y
+  115  java -version
+  116  ansible --version
+  117  sudo apt update
+  118  sudo apt install ansible -y
+  119  ansible --version
+  120  terraform --version
+  121  mvn -version
+  122  sudo apt install maven -y
+  123  mvn -version
+  124  git init
+  125  git add .
+  126  sudo docker run hello-world
+  127  sudo apt update
+  128  sudo apt install openssh-server
+  129  sudo service ssh start
+  130  ifconfig
+  131  ip addr
+  132  sudo mkdir /mnt/shared
+  133  sudo mount -t drvfs '\\SHIVAKUMAR-QA\Shared Drive' /mnt/shared
+  134  sudo apt install cif-utils
+  135  sudo apt install cifs-utils
+  136  sudo apt update
+  137  sudo nano /etc/apt/sources.list
+  138  sudo apt update
+  139  sudo apt install cifs-utils
+  140  sudo mkdir -p /mnt/shared
+  141  sudo mount -t cifs //SHIVAKUMAR-QA/Shared\ Drive /mnt/shared -o username=SHIVAKUMAR-QA,password=sehwag.123,uid=$(id -u),gid=$(id -g)
+  142  sudo mount -t cifs //SHIVAKUMAR-QA/SharedDrive /mnt/shared -o username=SHIVAKUMAR-QA,password=sehwag.123,uid=$(id -u),gid=$(id -g)
+  143  sudo mount -t cifs //SHIVAKUMAR-QA/SharedDrive /mnt/shared -o username=SHIVAKUMAR-QA\Administrators,password=sehwag.123,uid=$(id -u),gid=$(id -g)
+  144  sudo mount -t cifs //SHIVAKUMAR-QA/SharedDrive /mnt/shared -o username=SHIVAKUMAR-QA,password=sehwag.123,sec=ntlm,uid=$(id -u),gid=$(id -g)
+  145  sudo mount -t cifs //192.168.1.8/SharedDrive /mnt/shared -o username=SHIVAKUMAR-QA,password=sehwag.123,sec=ntlm,uid=$(id -u),gid=$(id -g)
+  146  smbclient -L //192.168.1.8 -U SHIVAKUMAR-QA
+  147  sudo apt install smbclient
+  148  smbclient -L //192.168.1.8 -U SHIVAKUMAR-QA
+  149  smbclient -L //192.168.1.8 -U SHIVAKUMAR-QA\Administrator
+  150  smbclient -L //192.168.1.8 -U guest
+  151  dmesg | tail
+  152  sudo mount -t cifs //192.168.1.8/SharedDrive /mnt/shared -o username=SHIVAKUMAR-QA,password=sehwag.123,sec=ntlmssp,vers=3.0
+  153  sudo mount -t cifs //192.168.1.8/SharedDrive /mnt/shared -o username=SHIVAKUMAR-QA,password=sehwag.123,sec=ntlmssp,vers=2.1
+  154  sudo mount -t cifs //192.168.1.8/SharedDrive /mnt/shared -o username=SHIVAKUMAR-QA,password=sehwag.123,sec=ntlmssp,vers=1.0
+  155  smbclient -L //192.168.1.8 -U SHIVAKUMAR-QA
+  156  smbclient -L //192.168.1.8 -U Hp
+  157  sudo mount -t cifs //SHIVAKUMAR-QA/SharedDrive /mnt/shared -o username=Hp,password=sehwag.123,uid=$(id -u),gid=$(id -g)
+  158  sudo mount -t cifs //Shivakumar-qa/e /mnt/shared -o username=Hp,password=sehwag.123,uid=$(id -u),gid=$(id -g)
+  159  sudo mount -t cifs //192.168.1.8/e /mnt/shared -o username=Hp,password=sehwag.123,sec=ntlmssp,vers=1.0
+  160  sudo mount -t cifs //192.168.1.8/e /mnt/shared -o username=Hp,password=sehwag.123,sec=ntlmssp,vers=3.0
+  161  cd /mnt/shared
+  162  ls
+  163  ls sha
+  164  cd SharedDrive
+  165  git init
+  166  cd ..
+  167  cd c
+  168  cd Users/HP
+  169  ls
+  170  cd ..mnt
+  171  cd ../mnt
+  172  cd ..
+  173  cd ../..
+  174  ls
+  175  cd shared
+  176  ls
+  177  cd ..
+  178  ls
+  179  cd d
+  180  mkdir DevOps
+  181  ls
+  182  cd DevOps/
+  183  cp -r /mnt/shared/SharedDrive ~/mnt/d/DevOps
+  184  pwd
+  185  cd ../..
+  186  ls
+  187  cd shared
+  188  pwd
+  189  cd SharedDrive
+  190  cd ../mnt/d/Devops
+  191  cd ..~/mnt/d/Devops
+  192  cd /mnt/d/Devops
+  193  ls
+  194  cp -r /mnt/shared/SharedDrive .
+  195  git init
+  196  git add .
+  197  git commit -m "Initial commit Sample webpage "
+  198  git config --global user.name "Shiva"
+  199  git config --global user.name "cheralashivakumar"
+  200  git config --global user.email "cheralashivakumar@gmail.com"
+  201  git config --list
+  202  git commit -m "Initial commit for DD Sample webpage "
+  203  git log
+  204  git remote add origin https://github.com/cheralashivakumar/DevopsProject.git
+  205  git branch -M main
+  206  git push -u origin main
+  207  
+  208  git branch -M main
+  209  git push -u origin main
+  210  git remote -v
+  211  shiva@DESKTOP-EO8T3A7:/mnt/d/Devops$ git remote -v
+  212  origin  https://github.com/cheralashivakumar/DevopsProject.git (fetch)
+  213  origin  https://github.com/cheralashivakumar/DevopsProject.git (push)shiva@DESKTOP-EO8T3A7:/mnt/d/Devops$ git remote -v
+  214  origin  https://github.com/cheralashivakumar/DevopsProject.git (fetch)
+  215  history
+  216  git push -u origin main
+  217  ssh-keygen -t ed25519 -C "cheralashivakumar@gmail.com"
+  218  cat ~/.ssh/id_ed25519.pub
+  219  ls
+  220  mv sshkey id_ed25519
+  221  cat ~/.ssh/id_ed25519.pub
+  222  mv id_ed25519 id_ed25519.pub
+  223  ls
+  224  cat ~/.ssh/id_ed25519.pub
+  225  pwd
+  226  ls ~/.ssh
+  227  ls .ssh
+  228  ls /.ssh
+  229  ssh-keygen -t ed25519 -C "cheralashivakumar@gmail.com"
+  230  cat ~/.ssh/id_ed25519.pub
+  231  ls /.ssh
+  232  ls ~/.ssh
+  233  ssh -T git@github.com
+  234  git push -u origin main
+  235  git remote set-url origin git@github.com:cheralashivakumar/DevopsProject.git
+  236  git remote -v
+  237  git push -u origin main
+  238  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+  239  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+  240  sudo apt update
+  241  sudo apt install jenkins -y
+  242  sudo systemctl start jenkins
+  243  ls
+  244  sudo systemctl enable jenkins
+  245  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  246  ps -ef | grep jenkins
+  247  wc /var/lib/jenkins/secrets/initialAdminPassword
+  248  wc ~/.ssh/id_ed25519.pub
+  249  ps
+  250  top
+  251  htop
+  252  kill
+  253  ifconfig
+  254  ping 
+  255  ping www.google.com
+  256  ping -c 4 http://54.166.212.253/
+  257  sudo ping -c 4 http://54.166.212.253/
+  258  sudo ping -c 4 google.com
+  259  sudo su
+  260  ls -l
+  261  find . -name Dockerfile
+  262  find . -name sshKey
+  263  find . -name DineDesk
+  264  sudo find / -name Dockerfile
+  265  sudo find / -name Dockerfile 2>/dev/null
+  266  nano Dockerfile
+  267  docker build -t myapp .
+  268  sudo docker build -t myapp .
+  269  ls -l /var/www/html
+  270  ansible --version
+  271  dpkg --installed | grep terraform
+  272  dpkg --list | grep terraform
+  273  history
+  274  history > history.txt
